@@ -1,0 +1,126 @@
+
+<html>
+<head>
+  <title>Checkbox with Dropdown and Search Bar</title>
+  
+</head>
+<body>
+    <form >
+
+  <h1>checkbox </h1>
+  
+   
+    <label for="checkbox">Select Range of AGe </label>
+    <select id="checkbox" >
+    
+      <option value="option1">below 20</option>
+      <option value="option2">20-50</option>
+      <option value="option3">above 50</option>
+      
+    </select>
+<br><br>
+
+    <label for="checkbox">select year of study</label>
+   
+    <select id="checkbox1" >
+    
+    
+      <option value="option1">1</option>
+      <option value="option2">2</option>
+      <option value="option3">3</option>
+      <option value="option3">4</option>
+    </select>
+<br><br>
+
+    <label for="checkbox">No.Of Backlogs</label>
+    <select id="checkbox2" >
+    
+      <option value="option1">0</option>
+      <option value="option2">1</option>
+      <option value="option3">2</option>
+      <option value="option3">3</option>
+      <option value="option3">4</option>
+      <option value="option3">5</option>
+      <option value="option3">above 5</option>
+    </select>
+<br><br>
+    <label for="checkbox">No.Of projects u completed</label>
+    <select id="checkbox3" >
+    
+      <option value="option1"> 1</option>
+      <option value="option2"> 2</option>
+      <option value="option3">3</option>
+      <option value="option3">above 3</option>
+    </select>
+<br><br>
+
+    <label for="checkbox">No.of internship u done</label>
+    <select id="checkbox4" >
+    
+      <option value="option1"> 1</option>
+      <option value="option2"> 2</option>
+      <option value="option3"> more than 2</option>
+    </select>
+    <br><br>
+
+
+    <label for="checkbox">Experience in years</label>
+    <select id="checkbox5" >
+    
+      <option value="option1"> 1</option>
+      <option value="option2"> 2</option>
+      <option value="option3"> 3</option>
+      <option value="option3">morethan 3</option>
+    </select>
+
+
+  </div>
+  <br><br>
+  <input type="button" id="btn1" value="submit"> 
+  <p class="output" id="output"></p>
+  <p class="output" id="output1"></p>
+  <p class="output" id="output2"></p>
+  <p class="output" id="output3"></p>
+  <p class="output" id="output4"></p>
+  <p class="output" id="output5"></p>
+    </form>
+
+<script>
+    const c1=document.getElementById('checkbox');
+    const c2=document.getElementById('checkbox1');
+    const c3=document.getElementById('checkbox2');
+    const c4=document.getElementById('checkbox3');
+    const c5=document.getElementById('checkbox4');
+    const c6=document.getElementById('checkbox5');
+    
+   
+    const btn1=document.getElementById('btn1');
+    const out1=document.getElementById('output');
+    const out2=document.getElementById('output1');
+    const out3=document.getElementById('output2');
+    const out4=document.getElementById('output3');
+    const out5=document.getElementById('output4');
+    const out6=document.getElementById('output5');
+
+
+
+
+
+
+
+    function f1(){
+        out1.innerHTML=c1.value;
+        out2.innerHTML=c2.value;
+        out3.innerHTML=c3.value;
+        out4.innerHTML=c4.value;
+        out5.innerHTML=c5.value;
+        out6.innerHTML=c6.value;
+        
+            }
+            btn1.addEventListener('click',f1);
+</script>
+
+</body>
+</html>
+
+    
